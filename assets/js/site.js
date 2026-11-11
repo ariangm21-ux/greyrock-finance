@@ -441,7 +441,7 @@
 
   /* ---------- enquiry form ---------- */
   // Apps Script web app URL (ends in /exec). Empty = enquiries stay in the visitor's browser only.
-  var ENQUIRY_WEBHOOK = "";
+  var ENQUIRY_WEBHOOK = "https://script.google.com/macros/s/AKfycbzEfX5S-e2jdcASKQvTiYmdjZ_BN2khLr04I3iHq2X2KVrC9sZA5TxlnRhxg7AdYFRM/exec";
   var form = $(".enq-form"), done = $(".enq-done");
   if (form && done) {
     var rules = {
