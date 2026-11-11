@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greyrock Finance · Private Investment Office, Dhaka</title>
+<meta name="description" content="Greyrock Finance is a private investment office for a small number of Bangladeshi families, founders and institutions. By introduction only.">
+<!-- Draft: keep out of search engines until the owner approves real details. Remove before launch. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#050505">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@300;400&display=swap">
+<!-- Only the ৳ glyph (no Bangla text on the site), so the font request is a few hundred bytes. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&text=%E0%A7%B3&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+  // Before paint: enable JS styles and decide whether the intro curtain plays (once per session, never with reduced motion).
+  (function () {
+    var d = document.documentElement, seen = false;
+    d.classList.add("js");
+    try { seen = sessionStorage.getItem("grf-intro") === "1"; } catch (e) {}
+    if (!seen && !matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("js-intro");
+    // Safety net if site.js fails: never leave the page hidden.
+    setTimeout(function () { d.classList.add("is-ready"); d.classList.remove("js-intro"); }, 4000);
+  })();
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- champagne metal, used by every engraved line -->
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7A6D58"/>
+      <stop offset=".25" stop-color="#CDBB9A"/>
+      <stop offset=".42" stop-color="#F6EDDC"/>
+      <stop offset=".6" stop-color="#A99878"/>
+      <stop offset=".8" stop-color="#E8DABF"/>
+      <stop offset="1" stop-color="#8C7E67"/>
+    </linearGradient>
+    <pattern id="hatch" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <line x1="0" y1="0" x2="0" y2="2.6" stroke="#CDBB9A" stroke-width=".45" stroke-opacity=".32"/>
+    </pattern>
+  </defs>
+  <symbol id="gr-mark" viewBox="0 0 48 48">
+    <path d="M24 4 41 13 44 31 30 44 12 41 4 24 11 10Z"/>
+    <path d="M24 4 21 21 44 31M21 21 12 41M21 21 4 24"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="curtain" aria-hidden="true">
+  <svg class="curtain-mark" viewBox="0 0 48 48">
+    <path pathLength="1" d="M24 4 41 13 44 31 30 44 12 41 4 24 11 10Z"/>
+    <path pathLength="1" d="M24 4 21 21 44 31M21 21 12 41M21 21 4 24"/>
+  </svg>
+  <p class="curtain-word metal-text">Greyrock</p>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#main" aria-label="Greyrock Finance, back to top">
+      <svg class="mark" aria-hidden="true"><use href="#gr-mark"/></svg>
+      <span class="brand-word"><span class="bw-1">Greyrock</span><span class="bw-2">Finance</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#mandates">Mandates</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#approach">Approach</a>
+      <a href="#enquire">Enquire</a>
+    </nav>
+    <a class="btn btn-glass hdr-cta" href="#enquire">Request an introduction</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menu" hidden>
+    <a href="#philosophy"><span>I</span>Philosophy</a>
+    <a href="#mandates"><span>II</span>Mandates</a>
+    <a href="#calculator"><span>III</span>Calculator</a>
+    <a href="#approach"><span>IV</span>Approach</a>
+    <a href="#enquire"><span>V</span>Enquire</a>
+    <a class="btn btn-metal mnav-cta" href="#enquire">Request an introduction</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas class="silk" aria-hidden="true"></canvas>
+    <div class="hero-light" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="pill-label hero-fade" style="--d:.35s"><span class="dot" aria-hidden="true"></span>Private investment office · Dhaka</p>
+        <h1 class="hero-title" id="hero-title">
+          <span class="line"><span class="line-in">Wealth,</span></span>
+          <span class="line"><span class="line-in" style="--d:.14s"><em class="metal-text">set in stone.</em></span></span>
+        </h1>
+        <p class="hero-lede hero-fade" style="--d:.65s">Greyrock Finance looks after the capital of a small number of Bangladeshi families, founders and institutions. We don't advertise, and new relationships begin only by introduction.</p>
+        <div class="hero-ctas hero-fade" style="--d:.78s">
+          <a class="btn btn-metal" href="#enquire">Request an introduction <span class="btn-ico"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-glass" href="#letter">Read our letter</a>
+        </div>
+      </div>
+
+      <div class="hero-card hero-fade" style="--d:.5s">
+        <div class="card-stage">
+          <div class="bcard" role="img" aria-label="The Greyrock black card, engraved with the rock mark">
+            <svg class="bcard-guilloche guilloche" data-guilloche="card" aria-hidden="true"></svg>
+            <span class="bcard-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span class="bcard-word metal-text" aria-hidden="true">Greyrock</span>
+            <svg class="bcard-medal" viewBox="0 0 120 150" aria-hidden="true">
+              <ellipse cx="60" cy="75" rx="56" ry="71" class="m-ring"/>
+              <ellipse cx="60" cy="75" rx="51" ry="66" class="m-hatch"/>
+              <ellipse cx="60" cy="75" rx="51" ry="66" class="m-ring thin"/>
+              <use href="#gr-mark" x="24" y="39" width="72" height="72" class="m-mark"/>
+            </svg>
+            <span class="bcard-holder" aria-hidden="true">Reserved for you</span>
+            <span class="bcard-note" aria-hidden="true">By introduction<br>only</span>
+            <span class="bcard-sheen" aria-hidden="true"></span>
+          </div>
+          <div class="card-shadow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap hero-fade" style="--d:.95s">
+      <ul class="hero-meta glass">
+        <li><span class="k">Access</span><span class="v">By introduction only</span></li>
+        <li><span class="k">Mandates</span><span class="v">Limited each year</span></li>
+        <li><span class="k">Horizon</span><span class="v">Generations, not quarters</span></li>
+        <li><span class="k">Office</span><span class="v">Dhaka, Bangladesh</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section class="letter" id="letter" aria-labelledby="letter-title">
+    <div class="wrap">
+      <article class="letter-panel rv">
+        <span class="orn" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <p class="label">A letter from the partners</p>
+        <h2 class="letter-greet" id="letter-title">To those who have been <em class="metal-text">introduced,</em></h2>
+        <div class="letter-body">
+          <p>This page is not an advertisement. We don't run campaigns, keep a public client list or publish our returns. It is here as a courtesy, for people who have heard our name from someone they trust.</p>
+          <p>Families in Bangladesh have built remarkable things in a single generation. Our work is to make sure what you have built lasts for the next three: protected, patiently grown and handed on well.</p>
+          <p>So we keep our circle small. Every family works with a partner, not an account manager. We say no more often than we say yes, and we invest our own capital alongside yours.</p>
+          <p>If that is what you have been looking for, we would be glad to meet.</p>
+        </div>
+        <p class="sign">With respect,<span class="sign-name">The Partners</span><span class="sign-firm">Greyrock Finance · Dhaka</span></p>
+        <svg class="seal" viewBox="0 0 160 160" aria-hidden="true">
+          <defs><path id="seal-ring" d="M80 80m-60 0a60 60 0 1 1 120 0a60 60 0 1 1-120 0"/></defs>
+          <circle cx="80" cy="80" r="76" class="s-base"/>
+          <circle cx="80" cy="80" r="71" class="thin"/>
+          <circle cx="80" cy="80" r="47" class="thin"/>
+          <text><textPath href="#seal-ring" textLength="372" lengthAdjust="spacing">GREYROCK FINANCE · PRIVATE OFFICE · DHAKA ·</textPath></text>
+          <use href="#gr-mark" x="56" y="56" width="48" height="48"/>
+        </svg>
+      </article>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="sec" id="philosophy" aria-labelledby="ph-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label rv">Philosophy</p>
+        <h2 class="h2 rv" id="ph-title" style="--d:.08s">Four principles we <em class="metal-text">do not bend.</em></h2>
+      </div>
+      <ol class="principles">
+        <li class="pr glass rv"><span class="pr-num metal-text" aria-hidden="true">I</span><h3>Few, by design</h3><p>We limit how many families we serve, so each one has a partner's full attention, not a call centre's.</p></li>
+        <li class="pr glass rv" style="--d:.1s"><span class="pr-num metal-text" aria-hidden="true">II</span><h3>Patience over noise</h3><p>We invest for decades, not quarters. We would rather miss a fashion than risk a fortune.</p></li>
+        <li class="pr glass rv"><span class="pr-num metal-text" aria-hidden="true">III</span><h3>Discretion is the service</h3><p>No logos on our door and no names in the press. Who you are and what you own is never ours to share.</p></li>
+        <li class="pr glass rv" style="--d:.1s"><span class="pr-num metal-text" aria-hidden="true">IV</span><h3>Our capital beside yours</h3><p>The partners invest alongside our families, on the same terms. When you do well, so do we, and not before.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- MANDATES -->
+  <section class="sec" id="mandates" aria-labelledby="md-title">
+    <div class="wrap">
+      <div class="sec-head sec-head-split">
+        <div>
+          <p class="label rv">Mandates</p>
+          <h2 class="h2 rv" id="md-title" style="--d:.08s">One office for <em class="metal-text">everything you own.</em></h2>
+        </div>
+        <p class="sec-intro rv" style="--d:.16s">Each relationship is shaped around a written family mandate. Most families bring us several of these at once, and we look after them as one picture.</p>
+      </div>
+      <ul class="mandates">
+        <li class="md glass rv">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12.5 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></span>
+          <h3>Private wealth stewardship</h3>
+          <p>One consolidated view of everything your family owns, managed to a single written plan.</p>
+          <span class="md-tag">Core mandate</span>
+        </li>
+        <li class="md glass rv" style="--d:.08s">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13a8 8 0 1 1-8-8v8Z"/><path d="M14 2a8 8 0 0 1 8 8h-8Z"/></svg></span>
+          <h3>Bangladesh private equity</h3>
+          <p>Patient stakes in well-run, founder-led Bangladeshi companies, with a seat at the table.</p>
+          <span class="md-tag">Direct investment</span>
+        </li>
+        <li class="md glass rv" style="--d:.16s">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V10l6-3v14"/><path d="M11 21V4l8 3.5V21"/><path d="M14 10h2M14 13.5h2M14 17h2M7.5 13h1M7.5 16.5h1"/></svg></span>
+          <h3>Real assets</h3>
+          <p>Land, commercial property and income-producing assets in Dhaka, Chattogram and beyond.</p>
+          <span class="md-tag">Property &amp; land</span>
+        </li>
+        <li class="md glass rv">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/><path d="M16 7h4v4"/></svg></span>
+          <h3>Capital markets</h3>
+          <p>Disciplined portfolios of listed shares on the DSE and CSE, with government securities and fixed income.</p>
+          <span class="md-tag">Listed &amp; fixed income</span>
+        </li>
+        <li class="md glass rv" style="--d:.08s">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M5 7h14"/><path d="M5 7 2.5 13a2.5 2.5 0 0 0 5 0Z"/><path d="m19 7-2.5 6a2.5 2.5 0 0 0 5 0Z"/></svg></span>
+          <h3>Shariah-conscious portfolios</h3>
+          <p>Screened portfolios and sukuk for families who require them, with zakat worked out every year.</p>
+          <span class="md-tag">Halal by mandate</span>
+        </li>
+        <li class="md glass rv" style="--d:.16s">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="5.5" cy="18.5" r="2.2"/><circle cx="12" cy="18.5" r="2.2"/><circle cx="18.5" cy="18.5" r="2.2"/><path d="M12 7.2v9.1M12 11.5H5.5v4.8M12 11.5h6.5v4.8"/></svg></span>
+          <h3>Family governance &amp; succession</h3>
+          <p>Family constitutions, succession planning and preparing the next generation to take the keys.</p>
+          <span class="md-tag">For generations</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CALCULATOR (a working desk calculator with finance keys) -->
+  <section class="sec calcsec" id="calculator" aria-labelledby="cx-title">
+    <div class="wrap calc-grid">
+      <div class="calc-copy">
+        <p class="label rv">The Greyrock calculator</p>
+        <h2 class="h2 rv" id="cx-title" style="--d:.08s">Work out your numbers, <em class="metal-text">in private.</em></h2>
+        <p class="sec-intro rv" style="--d:.16s">A working desk calculator, finished like the card. Use it for everyday sums, or press <strong class="gr-inline">GR</strong> to see what your capital could become at Greyrock's rate of 34% a year.</p>
+
+        <dl class="keyguide rv" style="--d:.22s">
+          <div class="kg-gr"><dt>GR</dt><dd>Greyrock's rate: 34% a year</dd></div>
+          <div><dt>n</dt><dd>Number of years</dd></div>
+          <div><dt>i%</dt><dd>Yearly rate (or press GR)</dd></div>
+          <div><dt>PV</dt><dd>Amount today</dd></div>
+          <div><dt>FV</dt><dd>Amount in the future</dd></div>
+        </dl>
+        <p class="keyguide-how rv" style="--d:.26s">Enter any three, then press the fourth for the answer.</p>
+
+        <div class="demos rv" style="--d:.3s">
+          <p class="demos-k">Try one</p>
+          <button class="demo" type="button" data-demo="grow"><span class="tk">৳</span>1 crore with Greyrock for 10 years</button>
+          <button class="demo" type="button" data-demo="double">How long to double with Greyrock?</button>
+          <button class="demo" type="button" data-demo="five"><span class="tk">৳</span>5 crore with Greyrock for 5 years</button>
+        </div>
+        <p class="calc-fine rv" style="--d:.34s">GR uses 34% a year, a deliberately conservative illustration set by the partners, below our recent results. Past results do not guarantee future returns, returns vary from year to year, and the value of an investment can fall as well as rise.</p>
+      </div>
+
+      <div class="device-stage rv" style="--d:.12s">
+        <div class="device" role="group" aria-label="Greyrock calculator">
+          <div class="dev-top" aria-hidden="true">
+            <div class="dev-brand"><span class="dev-word metal-text">Greyrock</span><span class="dev-model">GR-12 · Private office</span></div>
+            <span class="dev-solar"></span>
+          </div>
+          <div class="gr-row">
+            <span class="gr-cap" aria-hidden="true">Greyrock rate · 34% a year</span>
+            <button class="key k-gr" type="button" data-k="gr" aria-label="G R, use Greyrock's rate of 34 percent a year">GR</button>
+          </div>
+
+          <div class="lcd">
+            <p class="lcd-meta" id="lcd-meta" aria-hidden="true"></p>
+            <p class="lcd-main" id="lcd-main" role="status" aria-live="polite" aria-atomic="true">0</p>
+          </div>
+
+          <div class="keys">
+            <span class="kcap" aria-hidden="true">Years</span><span class="kcap" aria-hidden="true">Rate</span><span class="kcap" aria-hidden="true">Today</span><span class="kcap" aria-hidden="true">Future</span>
+            <button class="key k-fin" type="button" data-k="n" aria-label="n, number of years">n</button>
+            <button class="key k-fin" type="button" data-k="i" aria-label="i percent, yearly rate">i%</button>
+            <button class="key k-fin" type="button" data-k="pv" aria-label="P V, present value">PV</button>
+            <button class="key k-fin" type="button" data-k="fv" aria-label="F V, future value">FV</button>
+
+            <button class="key k-fn" type="button" data-k="ac" aria-label="All clear">AC</button>
+            <button class="key k-fn" type="button" data-k="neg" aria-label="Plus or minus">±</button>
+            <button class="key k-fn" type="button" data-k="pct" aria-label="Percent">%</button>
+            <button class="key k-op" type="button" data-k="/" aria-label="Divide">÷</button>
+
+            <button class="key" type="button" data-k="7">7</button>
+            <button class="key" type="button" data-k="8">8</button>
+            <button class="key" type="button" data-k="9">9</button>
+            <button class="key k-op" type="button" data-k="*" aria-label="Multiply">×</button>
+
+            <button class="key" type="button" data-k="4">4</button>
+            <button class="key" type="button" data-k="5">5</button>
+            <button class="key" type="button" data-k="6">6</button>
+            <button class="key k-op" type="button" data-k="-" aria-label="Minus">−</button>
+
+            <button class="key" type="button" data-k="1">1</button>
+            <button class="key" type="button" data-k="2">2</button>
+            <button class="key" type="button" data-k="3">3</button>
+            <button class="key k-op" type="button" data-k="+" aria-label="Plus">+</button>
+
+            <button class="key" type="button" data-k="0">0</button>
+            <button class="key" type="button" data-k="." aria-label="Decimal point">.</button>
+            <button class="key k-fn" type="button" data-k="back" aria-label="Delete last digit"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h11v14H9l-6-7z"/><path d="m12 9 5 6M17 9l-5 6"/></svg></button>
+            <button class="key k-eq" type="button" data-k="=" aria-label="Equals">=</button>
+          </div>
+          <p class="dev-foot" aria-hidden="true">Solar · Made for patient capital</p>
+        </div>
+        <div class="device-shadow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement" aria-labelledby="st-title">
+    <svg class="statement-rosette guilloche" data-guilloche="rosette" aria-hidden="true"></svg>
+    <div class="wrap">
+      <h2 class="statement-text rv" id="st-title">Quiet money.<br><em class="metal-text">Lasting families.</em></h2>
+      <ul class="discretion">
+        <li class="glass rv">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 5.1A10 10 0 0 1 12 5c6 0 9.5 7 9.5 7a17 17 0 0 1-3.2 4.1"/><path d="M6.6 6.6C3.9 8.4 2.5 12 2.5 12s3.5 7 9.5 7a9.6 9.6 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>
+          <h3>No public client list</h3>
+          <p>We don't publish who we work with, and we never use a family's name to win another.</p>
+        </li>
+        <li class="glass rv" style="--d:.1s">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3"/><path d="M12 15v2"/></svg></span>
+          <h3>No public returns</h3>
+          <p>Performance is reported to you, privately and in writing. Never to the market.</p>
+        </li>
+        <li class="glass rv" style="--d:.2s">
+          <span class="md-tile"><svg class="md-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/><path d="M3 3l18 18"/></svg></span>
+          <h3>No sales calls</h3>
+          <p>We never cold-call. Every conversation with us starts with an introduction.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="sec" id="approach" aria-labelledby="ap-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label rv">Approach</p>
+        <h2 class="h2 rv" id="ap-title" style="--d:.08s">How a relationship <em class="metal-text">begins.</em></h2>
+      </div>
+      <ol class="steps">
+        <li class="step rv"><span class="step-n metal-text">01</span><h3>An introduction</h3><p>From a client, a partner or an adviser you trust. It is the only way we take on new families.</p></li>
+        <li class="step rv" style="--d:.1s"><span class="step-n metal-text">02</span><h3>A private conversation</h3><p>At our office or in your home. We listen first: your family, your business, what you want to protect.</p></li>
+        <li class="step rv" style="--d:.2s"><span class="step-n metal-text">03</span><h3>A written mandate</h3><p>Your goals, your limits and what we will never do are put on paper before any capital moves.</p></li>
+        <li class="step rv" style="--d:.3s"><span class="step-n metal-text">04</span><h3>One partner, for life</h3><p>The same senior partner, reachable directly, through every market and every generation.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ENQUIRE -->
+  <section class="sec enquire" id="enquire" aria-labelledby="enq-title">
+    <div class="wrap enq-grid">
+      <div class="enq-copy">
+        <p class="label rv">Enquire</p>
+        <h2 class="h2 rv" id="enq-title" style="--d:.08s">Request an <em class="metal-text">introduction.</em></h2>
+        <p class="sec-intro rv" style="--d:.16s">Every request is read by a partner and kept in strict confidence. We reply personally within two working days.</p>
+        <ul class="enq-points rv" style="--d:.24s">
+          <li>Usually for families with investable assets of <span class="nw"><span class="tk">৳</span>10 crore</span> and above.</li>
+          <li>Shariah-conscious mandates available on request.</li>
+          <li>We meet in Dhaka, or wherever suits you.</li>
+        </ul>
+      </div>
+
+      <div class="enq-panel glass rv" style="--d:.12s">
+        <form class="enq-form" novalidate>
+          <input type="hidden" name="calculator" id="f-calc" value="">
+          <div class="row2">
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="e-name" required>
+              <p class="err-msg" id="e-name"></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Mobile / WhatsApp</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01712 345678" aria-describedby="e-phone" required>
+              <p class="err-msg" id="e-phone"></p>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="f-email">Email <span class="opt">(optional)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
+              <p class="err-msg" id="e-email"></p>
+            </div>
+            <div class="field">
+              <label for="f-intro">Introduced by <span class="opt">(optional)</span></label>
+              <input id="f-intro" name="introducedBy" type="text" autocomplete="off">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-assets">Investable assets</label>
+            <select id="f-assets" name="assets" aria-describedby="e-assets" required>
+              <option value="">Choose a range</option>
+              <option>৳10–25 crore</option>
+              <option>৳25–100 crore</option>
+              <option>Above ৳100 crore</option>
+              <option>I'd rather discuss in person</option>
+            </select>
+            <p class="err-msg" id="e-assets"></p>
+          </div>
+          <fieldset class="field">
+            <legend>How should we reach you?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="contact" value="WhatsApp" checked><span>WhatsApp</span></label>
+              <label class="chip"><input type="radio" name="contact" value="Call"><span>Phone call</span></label>
+              <label class="chip"><input type="radio" name="contact" value="Email"><span>Email</span></label>
+              <label class="chip"><input type="radio" name="contact" value="In person"><span>In person</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Anything we should know? <span class="opt">(optional)</span></label>
+            <textarea id="f-msg" name="message" rows="3"></textarea>
+          </div>
+          <div class="field">
+            <label class="check" for="f-consent">
+              <input id="f-consent" name="consent" type="checkbox" aria-describedby="e-consent">
+              <span class="box" aria-hidden="true"></span>
+              <span>I understand this is a request for a private conversation, not an offer of investment.</span>
+            </label>
+            <p class="err-msg" id="e-consent"></p>
+          </div>
+          <button class="btn btn-metal btn-block" type="submit"><span class="btn-label">Send request</span> <span class="btn-ico"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+          <p class="form-note">Your details are seen only by the partners and are never shared.</p>
+        </form>
+
+        <div class="enq-done" tabindex="-1" hidden>
+          <svg class="done-mark" aria-hidden="true"><use href="#gr-mark"/></svg>
+          <h3>Thank you, <span class="done-name"></span>.</h3>
+          <p>Your request is with the partners. One of us will reply personally within two working days, in the way you asked.</p>
+          <p class="done-small">Nothing more is needed from you for now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <a class="brand" href="#main" aria-label="Greyrock Finance, back to top">
+          <svg class="mark" aria-hidden="true"><use href="#gr-mark"/></svg>
+          <span class="brand-word"><span class="bw-1">Greyrock</span><span class="bw-2">Finance</span></span>
+        </a>
+        <p class="ftr-blurb">A private investment office for Bangladeshi families, founders and institutions. By introduction only.</p>
+      </div>
+      <div>
+        <h2 class="ftr-h">The office</h2>
+        <ul class="ftr-list">
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#mandates">Mandates</a></li>
+          <li><a href="#approach">Approach</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="ftr-h">Contact</h2>
+        <ul class="ftr-list">
+          <li>Dhaka, Bangladesh</li>
+          <li><a href="#enquire">Request an introduction</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="ftr-word metal-text" aria-hidden="true">Greyrock</p>
+    <div class="ftr-legal">
+      <p>Private website, shared only with the partners' friends and family. Please do not forward it. Nothing on this site is an offer, solicitation or advice to buy or sell any security. Illustrated returns are not a guarantee, and the value of investments can fall as well as rise.</p>
+      <p>© <span id="yr">2026</span> Greyrock Finance</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
